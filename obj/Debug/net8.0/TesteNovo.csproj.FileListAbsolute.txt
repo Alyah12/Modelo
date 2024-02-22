@@ -1,0 +1,14 @@
+C:\Users\heber\Projetos\TesteNovo\bin\Debug\net8.0\TesteNovo.exe
+C:\Users\heber\Projetos\TesteNovo\bin\Debug\net8.0\TesteNovo.deps.json
+C:\Users\heber\Projetos\TesteNovo\bin\Debug\net8.0\TesteNovo.runtimeconfig.json
+C:\Users\heber\Projetos\TesteNovo\bin\Debug\net8.0\TesteNovo.dll
+C:\Users\heber\Projetos\TesteNovo\bin\Debug\net8.0\TesteNovo.pdb
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.AssemblyInfoInputs.cache
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.AssemblyInfo.cs
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.csproj.CoreCompileInputs.cache
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.dll
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\refint\TesteNovo.dll
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.pdb
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.genruntimeconfig.cache
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\ref\TesteNovo.dll
