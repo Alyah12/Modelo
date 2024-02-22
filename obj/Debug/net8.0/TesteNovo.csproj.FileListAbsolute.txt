@@ -12,3 +12,4 @@ C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\refint\TesteNovo.dll
 C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.pdb
 C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.genruntimeconfig.cache
 C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\ref\TesteNovo.dll
+C:\Users\heber\Projetos\TesteNovo\obj\Debug\net8.0\TesteNovo.sourcelink.json

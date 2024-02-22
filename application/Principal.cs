@@ -8,11 +8,19 @@ public class Principal
         String name = Console.ReadLine()!;
         Console.Write("Digite sua idade: ");
         int idade = int.Parse(Console.ReadLine()!);
-        Console.Write("Digite seu CPF: ");
-        String cpf = Console.ReadLine()!;
-        Console.Write("Qual o seu sálario ?");
-        int balance = int.Parse(Console.ReadLine()!);
-        Console.Write("Você é uma pessoa júridica? (S/M) ");
+
+        String cpf = null;
+        int balance = 0;
+
+        if (idade >= 18)
+        {
+            Console.Write("Digite seu CPF: ");
+            cpf = Console.ReadLine()!;
+            Console.Write("Qual o seu sálario ?");
+            balance = int.Parse(Console.ReadLine()!);
+
+        }
+        Console.Write("Você é uma pessoa júridica? (S/N) ");
         char juridica = char.Parse(Console.ReadLine()!);
 
         Boolean pessoaJuridica = true;
