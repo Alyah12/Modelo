@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 
-namespace TesteNovo;
+namespace TesteNovo.entities;
 
 public class Conta : IEnumerable
 {
     private String name;  
     private int idade;
-    private String cpf;
+    private string? cpf;
     private int balance;
     private Boolean pessoaJuridica;
 
@@ -22,7 +22,7 @@ public class Conta : IEnumerable
         set => idade = value;
     }
 
-    public string Cpf
+    public string? Cpf
     {
         get => cpf;
         set => cpf = value ?? throw new ArgumentNullException(nameof(value));
@@ -45,7 +45,7 @@ public class Conta : IEnumerable
         
     }
 
-    public Conta(String name, int idade, string cpf, bool pessoaJuridica)
+    public Conta(String name, int idade, string? cpf, bool pessoaJuridica)
     {
         this.name = name;
         this.idade = idade;
@@ -53,7 +53,7 @@ public class Conta : IEnumerable
         this.pessoaJuridica = pessoaJuridica;
     }
 
-    public Conta(string name, int idade, string cpf, int balance, bool pessoaJuridica)
+    public Conta(string name, int idade, string? cpf, int balance, bool pessoaJuridica)
     {
         this.name = name;
         this.idade = idade;
@@ -62,18 +62,26 @@ public class Conta : IEnumerable
         this.pessoaJuridica = pessoaJuridica;
     }
 
-    public int jurosSobConta()
+    public int Deposito(int valor)
+    {
+        valor =+ balance;
+        return 0;
+    }
+
+    public int value()
+    {
+        return balance;
+    }
+
+    public int JurosSobConta()
     {
         return balance - 5 * 100;
     }
 
     public int Sacar(int desconto)
     {
-        return jurosSobConta() - desconto;
+        return JurosSobConta() - desconto;
     }
 
-    public IEnumerator GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
+    public IEnumerator GetEnumerator() => throw new NotImplementedException();
 }
