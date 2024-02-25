@@ -28,7 +28,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você tem uma máquina `<Windows / Linux / Mac>`.
 - Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando Banco Brasil.
 
 Para instalar o Banco Brasil a estas etapas:
 
@@ -44,9 +44,9 @@ Windows:
 <comando_de_instalação>
 ```
 
-## ☕ Usando <Banco_Brasil>
+## ☕ Usando Banco_Brasil
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para usar Banco Brasil, siga estas etapas:
 
 ```
 dotnet run BancoBrasil
