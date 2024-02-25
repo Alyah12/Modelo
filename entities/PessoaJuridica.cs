@@ -2,35 +2,35 @@
 
 public class PessoaJuridica : Conta
 {
-    private String nome;
-    private int cnpj;
+    private String _nome;
+    private int _cnpj;
 
     public PessoaJuridica(int balance, bool pessoaJuridica, string nome, int cnpj) : base(balance, pessoaJuridica)
     {
-        this.nome = nome;
-        this.cnpj = cnpj;
+        this._nome = nome;
+        this._cnpj = cnpj;
     }
 
     public PessoaJuridica(string nome, int cnpj)
     {
-        this.nome = nome;
-        this.cnpj = cnpj;
+        this._nome = nome;
+        this._cnpj = cnpj;
     }
 
-    public string Nome => nome;
+    public string Nome => _nome;
 
-    public int Cnpj => cnpj;
+    public int Cnpj => _cnpj;
 
     public int Balance1 => balance;
 
     public bool PessoaJuridica1 => pessoaJuridica;
 
-    public double JurosSobConta()
+    public new double JurosSobConta()
     {
         return balance - 4 / 100;
     }
 
-    public double Sacar(int descontoSaque)
+    public new double Sacar(int descontoSaque)
     {
         return JurosSobConta() - descontoSaque;
     }
