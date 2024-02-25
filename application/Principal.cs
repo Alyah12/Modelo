@@ -8,7 +8,7 @@ public class Principal
 {
     public static void Main(string[] args)
     {
-        Console.Write("Digite o nome do dono da conta ");
+        Console.Write("Digite o nome do dono da conta: ");
         String name = Console.ReadLine()!;
         Console.Write("Digite sua idade: ");
         int idade = int.Parse(Console.ReadLine()!);
@@ -38,11 +38,11 @@ public class Principal
             pessoaJuridica = false;
         }
 
-        Conta cc = new Conta(name, idade, cpf, balance, pessoaJuridica);
+        Conta cc = new Conta();
 
-        Console.Write("1.Depósito");
-        Console.Write("2. Sacar");
-        Console.Write("3. Extrato");
+        Console.WriteLine("1.Depósito");
+        Console.WriteLine("2.Sacar");
+        Console.WriteLine("3.Extrato");
          string? opcao = Console.ReadLine();
 
         switch (opcao)
@@ -50,17 +50,20 @@ public class Principal
             case "1" :
                 Console.Write("Digite o valor: ");
                 cc.Deposito(Console.Read());
+                Console.WriteLine(cc.value());
                 break;
             case "2":
                 Console.Write("Digite o valor que deseja sacar: ");
                 cc.Sacar(Convert.ToInt32(Console.ReadLine()));
+                Console.WriteLine(cc.value());
                 break;
             case "3":
-                Console.Write(cc.value());
+                Console.WriteLine(cc.value());
                 break;
             default:
                 Console.Write("Não identificado");
                 break;
         }
+
     }
 }
