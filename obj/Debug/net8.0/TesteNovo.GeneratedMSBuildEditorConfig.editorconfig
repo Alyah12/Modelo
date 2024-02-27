@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TesteNovo
-build_property.ProjectDir = C:\Repos\C# and .NET repos\Modelo\
+build_property.ProjectDir = C:\Users\heber\Projetos\TesteNovo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
