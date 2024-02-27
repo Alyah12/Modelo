@@ -5,12 +5,17 @@ namespace TesteNovo.entities;
 public class Conta : IEnumerable
 {
     protected int balance;
-    public Boolean pessoaJuridica;
+    public bool pessoaJuridica;
 
     public Conta(int balance, bool pessoaJuridica)
     {
         this.balance = balance;
         this.pessoaJuridica = pessoaJuridica;
+    }
+
+    public Conta()
+    {
+
     }
 
     public int Balance
@@ -35,17 +40,12 @@ public class Conta : IEnumerable
         return JurosSobConta() - descontoSaque;
     }
 
-    public Conta()
+    public void Depositar(int valor)
     {
-        
+        balance += valor;
     }
 
-    public int Deposito(int valor)
-    {
-        return valor =+ balance;
-    }
-
-    public int value()
+    public int GetValue()
     {
         return balance;
     }

@@ -11,31 +11,24 @@ public class Principal
         Console.Write("Digite sua idade: ");
         int idade = int.Parse(Console.ReadLine()!);
 
-        string? cpf = null;
-        int balance = 0;
-
-       if (idade >= 18)
+        if (idade >= 18)
         {
             Console.Write("Digite seu CPF: ");
-            cpf = Console.ReadLine()!;
+            string? cpf = Console.ReadLine()!;
             Console.Write("Qual o seu sálario ?");
-            balance = int.Parse(Console.ReadLine()!);
+            int balance = int.Parse(Console.ReadLine()!);
 
             Console.Write("Você é uma pessoa júridica? (S/N) ");
             char juridica = char.Parse(Console.ReadLine()!);
             Console.Clear();
 
-            bool pessoaJuridica = true;
-            if (juridica == 'S')
-            {
-                pessoaJuridica = true;
-            }
-            else
-            {
-                pessoaJuridica = false;
-            }
+            bool pessoaJuridica = juridica == 'S'; // quando tem um if com true no if e false no else, vc pode usar o próprio booleano como valor
 
-            Conta cc = new Conta();
+            Conta cc = new Pessoa
+            {
+                Balance = balance,
+                PessoaJuridica = pessoaJuridica
+            }; // da pra inicializar o objeto assim msm, mas sei la as vezes é confuso
 
             Console.WriteLine("1.Depósito");
             Console.WriteLine("2.Sacar");
@@ -44,27 +37,28 @@ public class Principal
 
             switch (opcao)
             {
-                case "1" :
+                case "1":
                     Console.Write("Digite o valor: ");
-                    cc.Deposito(Console.Read());
-                    Console.WriteLine(cc.value());
+                    var valor = Console.Read();
+                    cc.Depositar(valor);
+                    Console.WriteLine(cc.GetValue());
                     break;
                 case "2":
                     Console.Write("Digite o valor que deseja sacar: ");
                     cc.Sacar(Convert.ToInt32(Console.ReadLine()));
-                    Console.WriteLine(cc.value());
+                    Console.WriteLine(cc.GetValue());
                     break;
                 case "3":
-                    Console.WriteLine(cc.value());
+                    Console.WriteLine(cc.GetValue());
                     break;
                 default:
                     Console.Write("Não identificado");
                     break;
             }
         }
-       else
-       {
-           Console.Write("Você é menor de idade");
-       }
+        else
+        {
+            Console.Write("Você é menor de idade");
+        }
     }
 }
