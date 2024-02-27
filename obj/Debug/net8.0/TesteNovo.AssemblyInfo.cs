@@ -13,9 +13,10 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteNovo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ede6507994145e86e71fa73bf55544e350d4b275")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2761fb740c93c1498fca1a723e084043fa5a34b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteNovo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteNovo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
+
